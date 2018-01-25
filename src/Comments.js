@@ -4,17 +4,16 @@ import Truncate from 'react-truncate-html';
 class Comments extends Component {
   render(props) {
     const listItems = this.props.comments.map((comment) =>
-      <li>
-        <strong>{comment.issue.repository.nameWithOwner}</strong> | {comment.issue.title} | 
-        <Truncate lines={2} dangerouslySetInnerHTML={{__html: comment.bodyText}} />
-      </li>
+      <div key={comment.id} className="mb-3">
+        <strong>{comment.issue.title}</strong> <br />
+        <Truncate lines={3} dangerouslySetInnerHTML={{__html: comment.bodyText}} /> <br />
+        <i>{comment.issue.repository.nameWithOwner} #{comment.issue.number}</i>
+      </div>
     );
 
     return (
       <div>
-        <ul>
-          {listItems}
-        </ul>
+        {listItems}
       </div>
     );
   }
