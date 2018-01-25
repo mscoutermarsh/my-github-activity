@@ -21,7 +21,7 @@ class App extends Component {
         <header className="App-header Box-header py-3 px-2">
           <h1 className="App-title Box-title">
             <CommentIcon className="mr-2 octicon-top-nudge"/> My recent comments
-            <a href="https://github.com/notifications" className="float-right d-block octicon-top-nudge mr-2">
+            <a href="https://github.com/notifications" className="float-right d-block octicon-top-nudge mr-2" target="_blank">
               <BellIcon/>
             </a>
           </h1>
