@@ -23,30 +23,14 @@ const middlewareLink = new ApolloLink((operation, forward) => {
   return forward(operation)
 })
 
-// use with apollo-client
 const client = new ApolloClient({
   link: middlewareLink.concat(httpLink),
   cache: new InMemoryCache()
 });
 
-const SOME_QUERY = gql`query {
-  viewer {
-    issueComments(last: 20) {
-      nodes {
-        id
-        bodyHTML
-        createdAt
-        url
-      }
-    }
-  }
-}`;
-
-client.query({ query: SOME_QUERY }).then(console.log);
-
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <App />
+    <App/>
   </ApolloProvider>,
   document.getElementById('root')
 );
