@@ -24,16 +24,11 @@ class App extends Component {
           </h1>
         </header>
 
-        <div className="App-intro Box-body pl-2">
+        <div className="App-intro">
 
-          <div className="Box-row">
-            <IssueOpenedIcon className="ml-n3 float-left mr-2"/>
-            <h3 className="text-small">Checks summary view is not responding</h3>
-          </div>
+          <Comments comments={this.props.data.viewer.issueComments.nodes} />
 
         </div>
-
-        <Comments comments={this.props.data.viewer.issueComments.nodes} />
       </div>
     );
   }
