@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Truncate from 'react-truncate-html';
-import {CommentIcon, IssueOpenedIcon, ChevronRightIcon} from 'react-octicons';
+import {CommentIcon, IssueOpenedIcon, ChevronRightIcon, GitPullRequestIcon} from 'react-octicons';
 
 class Comments extends Component {
   render(props) {
     const listItems = this.props.comments.map((comment) =>
+
       <div key={comment.id} className="Box-row pl-4">
-        <IssueOpenedIcon className="ml-n4 float-left octicon-margin"/>
+        <CommentTypeIcon comment={comment}/>
         <a href={comment.issue.url}>
           <h3 className="mb-2 f5">{comment.issue.title}</h3>
         </a>
@@ -23,6 +24,20 @@ class Comments extends Component {
       <div class="d-flex flex-column-reverse">
         {listItems}
       </div>
+    );
+  }
+}
+
+function CommentTypeIcon(props) {
+  const comment = props.comment;
+
+  if(comment.pullRequest) {
+    return(
+      <GitPullRequestIcon className="ml-n4 float-left octicon-margin text-green"/>
+    )
+  } else {
+    return (
+      <IssueOpenedIcon className="ml-n4 float-left octicon-margin text-green"/>
     );
   }
 }
