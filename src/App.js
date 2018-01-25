@@ -4,13 +4,13 @@ import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
 import Comments from './Comments.js'
 import './App.css';
-import {CommentIcon, IssueOpenedIcon, BellIcon} from 'react-octicons'
+import {CommentIcon, IssueOpenedIcon, BellIcon, SyncIcon} from 'react-octicons'
 
 class App extends Component {
   render(props) {
     if (this.props.data.loading) {
       return (
-        <div className="App Box Box--condensed Extension--container">Loading...</div>
+        <div className="App Extension--container text-center p-4">Loading... <SyncIcon class="spin text-gray"/></div>
       );
     }
 

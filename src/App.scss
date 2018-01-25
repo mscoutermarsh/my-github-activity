@@ -32,3 +32,12 @@
     color: #959DA5;
   }
 }
+
+.spin {
+  animation: spin infinite 20s ease-in-out;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
