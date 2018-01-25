@@ -17,8 +17,10 @@ class App extends Component {
     return (
       <div className="App Box Box--condensed">
 
-        <header className="App-header Box-header">
-          <h1 className="App-title Box-title">Recent comments <CommentIcon/></h1>
+        <header className="App-header Box-header py-3 px-2">
+          <h1 className="App-title Box-title">
+            <CommentIcon className="mr-2"/> Recent comments
+          </h1>
         </header>
 
         <div className="App-intro Box-body">
