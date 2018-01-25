@@ -8,15 +8,14 @@ import {CommentIcon, IssueOpenedIcon, BellIcon} from 'react-octicons'
 
 class App extends Component {
   render(props) {
-    console.log(this.props);
     if (this.props.data.loading) {
       return (
-        <div className="App">Loading...</div>
+        <div className="App Box Box--condensed Extension--container">Loading...</div>
       );
     }
 
     return (
-      <div className="App Box Box--condensed">
+      <div className="App Box Box--condensed Extension--container">
 
         <header className="App-header Box-header py-3 px-2">
           <h1 className="App-title Box-title">

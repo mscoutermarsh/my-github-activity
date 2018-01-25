@@ -6982,6 +6982,9 @@ a.tabnav-extra:hover {
   .border-xl-left-0 {
     border-left: 0 !important; } }
 
+.Extension--container {
+  width: 350px; }
+
 .flex-column-reverse {
   flex-direction: column-reverse; }
 
@@ -6992,7 +6995,6 @@ a.tabnav-extra:hover {
 
 .octicon {
   fill: currentColor; }
-<<<<<<< Updated upstream
 
 .quote {
   border-left: 2px #e1e4e8 solid; }
