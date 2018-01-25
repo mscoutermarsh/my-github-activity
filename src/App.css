@@ -6992,3 +6992,10 @@ a.tabnav-extra:hover {
 
 .octicon {
   fill: currentColor; }
+
+.quote {
+  border-left: 2px #e1e4e8 solid; }
+
+.octicon-chevron {
+  position: relative;
+  top: 1px; }
