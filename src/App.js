@@ -38,7 +38,7 @@ export default graphql(gql`
   {
     viewer {
       login
-      issueComments(last: 20) {
+      issueComments(last: 40) {
         nodes {
           id
           issue {
