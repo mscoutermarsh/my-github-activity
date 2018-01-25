@@ -6981,3 +6981,6 @@ a.tabnav-extra:hover {
     border-bottom: 0 !important; }
   .border-xl-left-0 {
     border-left: 0 !important; } }
+
+.flex-column-reverse {
+  flex-direction: column-reverse; }

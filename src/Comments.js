@@ -20,7 +20,7 @@ class Comments extends Component {
     );
 
     return (
-      <div>
+      <div class="d-flex flex-column-reverse">
         {listItems}
       </div>
     );
