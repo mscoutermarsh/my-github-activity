@@ -12,7 +12,9 @@
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
     "react-octicons": "^0.2.0",
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "react-scripts": "1.1.0",
+    "react-truncate-html": "^0.1.6"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
