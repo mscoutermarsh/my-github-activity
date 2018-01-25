@@ -11,7 +11,7 @@ import { HttpLink } from 'apollo-link-http';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import gql from 'graphql-tag';
 
-let TOKEN = "";
+let TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 
 const httpLink = createHttpLink({ uri: 'https://api.github.com/graphql' });
 const middlewareLink = new ApolloLink((operation, forward) => {
@@ -22,8 +22,6 @@ const middlewareLink = new ApolloLink((operation, forward) => {
   });
   return forward(operation)
 })
-
-// authorization: localStorage.getItem('token') || null
 
 // use with apollo-client
 const client = new ApolloClient({
