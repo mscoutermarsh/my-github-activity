@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "apollo-client-preset": "^1.0.6",
+    "classnames": "^2.2.5",
     "graphql": "^0.12.3",
     "graphql-tag": "^2.6.1",
     "node-sass-chokidar": "^0.0.3",
@@ -12,7 +13,6 @@
     "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
     "react-octicons": "^0.2.0",
-    "react-scripts": "1.1.0",
     "react-scripts": "1.1.0",
     "react-truncate-html": "^0.1.6"
   },
