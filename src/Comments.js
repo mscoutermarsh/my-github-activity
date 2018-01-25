@@ -6,7 +6,7 @@ class Comments extends Component {
   render(props) {
     const listItems = this.props.comments.map((comment) =>
       <div key={comment.id} className="Box-row pl-4">
-        <IssueOpenedIcon className="ml-n3 float-left mr-2"/>
+        <IssueOpenedIcon className="ml-n4 float-left octicon-margin"/>
         <a href={comment.issue.url}>
           <h3 className="mb-2 f5">{comment.issue.title}</h3>
         </a>
@@ -14,7 +14,7 @@ class Comments extends Component {
           <Truncate lines={3} dangerouslySetInnerHTML={{__html: comment.bodyText}} />
         </div>
         <a href={comment.issue.url} className="d-block text-right text-gray">
-          <h4 className="f6 text-normal">{comment.issue.repository.nameWithOwner} #{comment.issue.number} <ChevronRightIcon className="ml-2"/></h4>
+          <h4 className="f6 text-normal">{comment.issue.repository.nameWithOwner} #{comment.issue.number} <ChevronRightIcon className="ml-2 text-blue"/></h4>
         </a>
       </div>
     );
