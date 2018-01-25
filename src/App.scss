@@ -34,7 +34,7 @@
 }
 
 .spin {
-  animation: spin infinite 20s ease-in-out;
+  animation: spin infinite 2s linear;
 }
 
 @keyframes spin {

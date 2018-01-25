@@ -7007,7 +7007,7 @@ a.tabnav-extra:hover {
   color: #959DA5; }
 
 .spin {
-  animation: spin infinite 20s ease-in-out; }
+  animation: spin infinite 2s linear; }
 
 @keyframes spin {
   from {

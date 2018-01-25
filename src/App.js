@@ -10,7 +10,7 @@ class App extends Component {
   render(props) {
     if (this.props.data.loading) {
       return (
-        <div className="App Extension--container text-center p-4">Loading... <SyncIcon class="spin text-gray"/></div>
+        <div className="App Extension--container text-center p-4">Loading... <SyncIcon className="spin text-gray"/></div>
       );
     }
 
