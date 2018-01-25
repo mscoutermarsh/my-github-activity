@@ -58,6 +58,9 @@ export default graphql(gql`
           bodyText
           createdAt
           url
+          pullRequest {
+            id
+          }
         }
       }
     }
