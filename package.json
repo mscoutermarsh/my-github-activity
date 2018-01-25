@@ -6,6 +6,7 @@
     "apollo-client-preset": "^1.0.6",
     "graphql": "^0.12.3",
     "graphql-tag": "^2.6.1",
+    "node-sass-chokidar": "^0.0.3",
     "octicons": "^7.1.0",
     "primer-css": "^9.6.0",
     "react": "^16.2.0",
@@ -14,6 +15,8 @@
     "react-scripts": "1.1.0"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
