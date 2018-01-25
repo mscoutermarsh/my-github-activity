@@ -15,7 +15,7 @@ class Comments extends Component {
           <Truncate lines={3} dangerouslySetInnerHTML={{__html: comment.bodyText}} />
         </div>
         <a href={comment.issue.url} className="d-block text-right text-gray">
-          <h4 className="f6 text-normal">{comment.issue.repository.nameWithOwner} #{comment.issue.number} <ChevronRightIcon className="ml-1 text-blue octicon-chevron"/></h4>
+          <h4 className="f6 text-normal">{comment.issue.repository.nameWithOwner} #{comment.issue.number} <ChevronRightIcon className="ml-1 text-blue octicon-top-nudge"/></h4>
         </a>
       </div>
     );

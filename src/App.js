@@ -4,7 +4,7 @@ import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
 import Comments from './Comments.js'
 import './App.css';
-import {CommentIcon, IssueOpenedIcon} from 'react-octicons'
+import {CommentIcon, IssueOpenedIcon, BellIcon} from 'react-octicons'
 
 class App extends Component {
   render(props) {
@@ -20,7 +20,10 @@ class App extends Component {
 
         <header className="App-header Box-header py-3 px-2">
           <h1 className="App-title Box-title">
-            <CommentIcon className="mr-2"/> My recent comments
+            <CommentIcon className="mr-2 octicon-top-nudge"/> My recent comments
+            <a href="https://github.com/notifications" className="float-right d-block octicon-top-nudge mr-2">
+              <BellIcon/>
+            </a>
           </h1>
         </header>
 

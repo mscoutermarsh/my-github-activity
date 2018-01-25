@@ -6996,6 +6996,9 @@ a.tabnav-extra:hover {
 .quote {
   border-left: 2px #e1e4e8 solid; }
 
-.octicon-chevron {
+.octicon-top-nudge {
   position: relative;
   top: 1px; }
+
+.Box-header .octicon {
+  color: #959DA5; }
