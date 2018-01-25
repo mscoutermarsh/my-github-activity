@@ -20,7 +20,7 @@ class App extends Component {
 
         <header className="App-header Box-header py-3 px-2">
           <h1 className="App-title Box-title">
-            <CommentIcon className="mr-2"/> Recent comments
+            <CommentIcon className="mr-2"/> My recent comments
           </h1>
         </header>
 
