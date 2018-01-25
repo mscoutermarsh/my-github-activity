@@ -3,7 +3,7 @@ import logo from './logo.png';
 import gql from 'graphql-tag';
 import { graphql } from 'react-apollo';
 import './App.css';
-import {CommentIcon} from 'react-octicons'
+import {CommentIcon, IssueOpenedIcon} from 'react-octicons'
 
 class App extends Component {
   render(props) {
@@ -23,8 +23,13 @@ class App extends Component {
           </h1>
         </header>
 
-        <div className="App-intro Box-body">
-          I am {this.props.data.viewer.login}
+        <div className="App-intro Box-body pl-2">
+
+          <div className="Box-row">
+            <IssueOpenedIcon className="ml-n3 float-left mr-2"/>
+            <h3 className="text-small">Checks summary view is not responding</h3>
+          </div>
+
         </div>
       </div>
     );
