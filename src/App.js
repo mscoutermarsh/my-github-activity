@@ -14,14 +14,13 @@ class App extends Component {
     }
 
     return (
-      <div className="App Box">
+      <div className="App Box Box--condensed">
         <header className="App-header Box-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title Box-title">My GitHub Notifications</h1>
         </header>
-        <p className="App-intro Box-body">
+        <div className="App-intro Box-body">
           I am {this.props.data.viewer.login}
-        </p>
+        </div>
       </div>
     );
   }
