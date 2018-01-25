@@ -5,7 +5,11 @@
   "dependencies": {
     "octicons": "^7.1.0",
     "primer-css": "^9.6.0",
+    "apollo-client-preset": "^1.0.6",
+    "graphql": "^0.12.3",
+    "graphql-tag": "^2.6.1",
     "react": "^16.2.0",
+    "react-apollo": "^2.0.4",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0"
   },
@@ -14,5 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-hot-loader": "^3.1.3"
   }
 }
