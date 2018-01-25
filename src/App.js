@@ -46,6 +46,7 @@ export default graphql(gql`
           id
           issue {
             number
+            state
             url
             title
             repository {
@@ -58,6 +59,7 @@ export default graphql(gql`
           url
           pullRequest {
             id
+            state
           }
         }
       }
